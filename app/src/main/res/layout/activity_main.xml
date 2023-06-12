@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/imgDice1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/dice1"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:id="@+id/imgDice2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/dice1"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:id="@+id/imgDice3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/dice1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDisplayResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mời bạn chọn"
+        android:layout_marginTop="@dimen/margin_button"
+        style="@style/textViewStyle"
+        android:textSize="30sp"
+        android:background="@color/light_blue"
+        android:gravity="center"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="@dimen/margin_button"
+        style="@style/textViewStyle"
+        android:textSize="30sp"
+        android:background="@color/light_blue"
+        android:gravity="center"
+        android:padding="5dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_button">
+
+
+        <Button
+            android:id="@+id/btnTai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tài"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnXiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Xỉu"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
